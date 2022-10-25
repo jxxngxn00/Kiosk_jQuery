@@ -101,4 +101,11 @@
 			sum=0;											//sum 변수 초기화
 	})//btn click
 	
+$('.food').hover(function() { 
+    var src = $(this).attr('src');
+   $(this).attr('src',src.replace('.PNG','_1.PNG'));
+  }, function() {
+   var src = $(this).attr('src');
+   $(this).attr('src',src.replace('_1.PNG','.PNG'));
+  });
 }); //function

@@ -38,6 +38,7 @@ $(function(){
 		$('.list', opener.document).remove();								//추가한 tr 모두 삭제
 		$('#total', opener.document).attr('value',0);						//최종금액 내용 0으로 설정
 		$('.menuCount', opener.document).val('0');
+		
 		window.close();
 	})
 	

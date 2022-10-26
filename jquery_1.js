@@ -75,7 +75,7 @@
 			$('#listTable').append(tr);
 			}//if
 		}//else - 0개일 경우
-		
+		$('.menuCount').val('0');
 	});//select
 	
 				
@@ -85,20 +85,19 @@
 		sum -= $(this).parent().parent().find('td:eq(2)').text(); 	//this(btn)의 부모(td)의 부모(tr)의 자식요소(td)중 3번째의 text 저장
 		$('#total').attr('value',sum);											//최종금액 내용 설정
    	 	$(this).parent().parent().remove();       							//this(btn)의 부모(td)의 부모(tr)를 삭제
+   	 	$('.menuCount').val('0');
      });
 	
 	
 	/* 주문완료 버튼을 누를 경우 */
 	$('#btn').click(function(){
-		res = confirm('결제 하시겠습니까?');			//결제 여부를 묻는 알림창 출력
-		if(res){												//확인을 눌렀을 경우
-			alert('결제 완료되었습니다 : 최종 금액 '+sum+' 원');
-		} else{												//취소를 눌렀을 경우
-		 	alert('처음 화면으로 돌아갑니다.');
-		}
-		$('.list').remove();								//추가한 tr 모두 삭제
-		$('#total').attr('value',0);						//최종금액 내용 0으로 설정
-			sum=0;											//sum 변수 초기화
+		
+		window.open('pay.html','주문내역','width=380, height=450');
+		
+		/*
+		
+		}*/
+		sum=0;											//sum 변수 초기화
 	})//btn click
 	
 $('.food').hover(function() { 

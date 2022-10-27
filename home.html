@@ -2,25 +2,25 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title> 메인화면 </title>
+    <title> 코스모한식 </title>
   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
   <script>
-    $(function(){
+  $(function(){
       $('#slide_banner').bxSlider({
-    	   mode: 'fade',
-    	   auto: true,
-    	   captions: true,
-    	   autoControls: true,
-    	   stopAutoOnClick: true,
-    	   pager: true,
-    	   slideWidth: 800
-    	  });
+    	  mode: 'fade',
+          auto: true,
+          captions: true,
+          autoControls: true,
+          stopAutoOnClick: true,
+          pager: true,
+          slideWidth: 800,
+          pause:500
+         });
       });
-   
   </script>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <style type="text/css">
@@ -71,6 +71,7 @@ img{border:none 0;vertical-align:top;}
 		<div style='text-align:center'><img src="./images/10.JPG" id='logo' ></div>
 	</tr>
 	</table>
+	<!-- bxSlider 사용 -->
 	   <div id="banner_wrap">
       <ul id="slide_banner">
          <li><a href="#"><img src="./images/13.PNG" alt="사진1" /></a></li>
@@ -81,6 +82,8 @@ img{border:none 0;vertical-align:top;}
       </ul>
  
    </div>
+   
+   <!-- 매장 식사 여부 판단 버튼 -->
 	<div id='eatIn'>
 	<a href='menu.html'>
 		   <button class="button" type="button" >

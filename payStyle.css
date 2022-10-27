@@ -1,1 +1,56 @@
 @charset "UTF-8";
+
+.payButton{
+   font-size: 15px;
+   padding: 3px 6px;
+   border: 2px solid #3D2F2E;
+   background-color: transparent;
+   color: #3D2F2E;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   font-weight: bold;
+}
+
+#pay_olderList{
+	
+	width: 250px;
+	
+}
+
+#pay_sum{
+   width: 110px;
+   height: 25px;
+   font-size: 15px;
+   color: #000000;
+   appearance: none;
+   border: 2px solid #ddd;
+   font-weight: bolder;
+   
+}
+
+.tab{
+   font-family: 'Roboto', sans-serif;
+   font-size: 1em;
+     font-weight: bolder;
+     text-align: center;
+     color: #fff;
+}
+
+#pay_listtr{
+   font-weight: bold;
+     color: #fff;
+     background: #73685d;
+     border: 1px solid;
+}
+
+table{
+	width:100%;
+}
+
+button{
+	width:100%;
+}
+
+#pay_listtr>td, .list>td, #pay_totallist>td{
+	text-align: center;
+}

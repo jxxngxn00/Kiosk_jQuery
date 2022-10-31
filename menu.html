@@ -12,13 +12,14 @@
 
 
 <div id="leftdiv">
+<!-- 메뉴 테이블 생성 -->
 <table class="menutbl">
 	<tr id="menutitle">
 		<th colspan=4 id="titleText"><img src="./images/10.JPG" id='logo' ></th>
 	</tr>
 	<tr class="menus">
 		<td id='menu1' class='menu'>
-			<img src="./images/0.PNG" /> <br/>
+			<img src="./images/0.PNG" class="food"/> <br/>
 			<span id="label1" class='menuName' value = '된장찌개'>된장찌개</span><br/>
 			<span id="price1" class='price' value = '7000'>₩ 7,000</span>
 			<br/>
@@ -32,7 +33,7 @@
 			</select>
 		</td>
 		<td id='menu2' class='menu'>
-			<img src="./images/1.PNG" height="150" width="200" /> <br/>
+			<img src="./images/1.PNG" height="150" width="200" class="food"/> <br/>
 			<span id="label2" class='menuName' value = '김치찌개'>김치찌개</span><br/>
 			<span id="price2" class='price' value = '7000'>₩ 7,000</span><br/>
 			<select name="menu2Count" id="menu2Count" class='menuCount'>
@@ -45,7 +46,7 @@
 			</select>
 		</td>
 		<td id='menu3' class='menu'>
-			<img src="./images/2.PNG" height="150" width="200"/> <br/>
+			<img src="./images/2.PNG" height="150" width="200" class="food"/> <br/>
 			<span id="label3" class='menuName' value = '제육볶음'>제육볶음</span><br/>
 			<span id="price3" class='price' value = '7000'>₩ 7,000</span><br/>
 			<select name="menu3Count" id="menu3Count" class='menuCount'>
@@ -61,7 +62,7 @@
 	</tr>
 	<tr class="menus">
 		<td id='menu4' class='menu'>
-			<img src="./images/3.PNG" height="150" width="200"/> <br/>
+			<img src="./images/3.PNG" height="150" width="200" class="food"/> <br/>
 			<span id="label4" class='menuName' value = '비빔밥'>비빔밥</span><br/>
 			<span id="price4" class='price' value = '7000'>₩ 7,000</span>
 			<br/>
@@ -75,7 +76,7 @@
 			</select>
 		</td>
 		<td id='menu5' class='menu'>
-			<img src="./images/4.PNG" height="150" width="200"/> <br/>
+			<img src="./images/4.PNG" height="150" width="200" class="food"/> <br/>
 			<span id="label5" class='menuName' value='갈비탕'>갈비탕</span><br/>
 			<span id="price5" class='price' value='8000'>₩ 8,000</span><br/>
 			<select name="menu5Count" id="menu5Count" class='menuCount'>
@@ -88,7 +89,7 @@
 			</select>
 		</td>
 		<td id='menu6' class='menu'>
-			<img src="./images/5.PNG" height="150" width="200"/> <br/>
+			<img src="./images/5.PNG" height="150" width="200" class="food"/> <br/>
 			<span id="label6" class='menuName' value='삼계탕'>삼계탕</span><br/>
 			<span id="price6" class='price' value='8500'>₩ 8,500</span><br/>
 			<select name="menu6Count" id="menu6Count" class='menuCount'>
@@ -103,7 +104,7 @@
 	</tr>
 	<tr class="menus">
 		<td id='menu7' class='menu'>
-			<img src="./images/6.PNG" height="150" width="200" /> <br/>
+			<img src="./images/6.PNG" height="150" width="200" class="food"/> <br/>
 			<span id="label7" class='menuName' value='라면'>라면</span><br/>
 			 <span id="price7" class='price' value='4000'>₩ 4,000</span><br/>
 			<select name="menu7Count" id="menu7Count" class='menuCount'>
@@ -116,7 +117,7 @@
 			</select>
 		</td>
 		<td id='menu8' class='menu'>
-			<img src="./images/7.PNG" height="150" width="200"/> <br/>
+			<img src="./images/7.PNG" height="150" width="200" class="food"/> <br/>
 			<span id="label8" class='menuName' value='동태찌개'>동태찌개</span><br/>
 			<span id="price8" class='price' value='8000'>₩ 8,000</span><br/>
 			<select name="menu8Count" id="menu8Count" class='menuCount'>
@@ -129,7 +130,7 @@
 			</select>
 		</td>
 		<td id='menu9' class='menu'>
-			<img src="./images/8.PNG" height="150" width="200"/> <br/>
+			<img src="./images/8.PNG" height="150" width="200" class="food"/> <br/>
 			<span id="label9" class='menuName' value='쫄면'>쫄면</span><br/>
 			<span id="price9" class='price' value='7000'>₩ 7,000</span><br/>
 			<select name="menu9Count" id="menu9Count" class='menuCount'>
@@ -145,21 +146,26 @@
 </table>
 </div>
 
+<!-- 주문내역 테이블 생성 -->
 <div id="rightdiv">
 <table id="listTable">
 	<tr id="listtitle">
-		<th colspan=4 id="titleText"><img src="./images/11.JPG" id='olderList' ></th>
+		<th colspan=6 id="titleText"><img src="./images/11.JPG" id='olderList' ></th>
 	</tr>
 	<tr id="totallist">
-		<td colspan='4' id='sum'>
+		<!-- 총 합계 금액 출력 -->
+		<td colspan='6' id='sum'>
 			합 계 : <input type='text'  value=0 id='total' /> 원 
 			<input type='button' value='주문하기'  id='btn'/>
 		</td>
 	</tr>
+	<!-- 총 주문 내역 머릿말 -->
 	<tr id="listtr">
 		<td width="120">메 뉴</td>
+		<td width="20"></td>
+		<td width="40">수 량</td>
+		<td width="20"></td>
 		<td width="100">금 액</td>
-		<td width="100">수 량</td>
 		<td width="80">취 소</td>
 	</tr>
 	

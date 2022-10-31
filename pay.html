@@ -11,22 +11,25 @@
 <body>
 
 <table id="payTable">
+	<!-- 타이틀 로고 -->
 	<tr id="pay_listtitle">
-		<th colspan=3 id="pay_titleText"><img src="./images/11.JPG" id='pay_olderList' ></th>
+		<th colspan=3 id="pay_titleText" bgcolor= '#3D2F2E'><img src="./images/12.JPG" id='pay_olderList' ></th>
 	</tr>
+	<!-- 총 금액 출력 창 -->
 	<tr id="pay_totallist">
 		<td colspan='3' id='pay_sum'>
 			합 계 : <input type='text'  value=0 id='pay_total' /> 원
 		</td>
 	</tr>
+	<!-- 주문 내역 출력 -->
 	<tr id="pay_listtr">
 		<td width="100">메 뉴</td>
-		<td width="100">금 액</td>
 		<td width="100">수 량</td>
+		<td width="100">금 액</td>
 	</tr>
 	</table>
-	<!-- 버튼에 이미지를 넣기 (카드, 현금, 삼성페이) -->
-	<table id="buttonTable">
+	<!-- 결제 버튼 테이블-->
+<table id="buttonTable">
 	<tr id ="payButtons">
 			<td>
 				<button class="payButton" type="button" id="card">
